@@ -156,6 +156,7 @@ contract NFTMarketplace is ERC721URIStorage {
       return items;
     }
 
+
     /* Returns only items a user has listed */
     function fetchItemsListed() public view returns (MarketItem[] memory) {
       uint totalItemCount = _tokenIds.current();
